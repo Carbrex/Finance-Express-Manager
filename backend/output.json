@@ -1,0 +1,11 @@
+{
+	"user": {
+		"name": "apple",
+		"email": "apple@a.com",
+		"password": "$2a$10$Mdkbwqx.cBCOB/YBqVQucOq0TcR973.VVBj2ePi0LidD.9B9xcMva",
+		"transactions": [],
+		"_id": "643ee48541b09ee4d011f872",
+		"__v": 0
+	},
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDNlZTQ4NTQxYjA5ZWU0ZDAxMWY4NzIiLCJuYW1lIjoiYXBwbGUiLCJpYXQiOjE2ODE4NDMzMzMsImV4cCI6MTY4NDQzNTMzM30.wWkEafSYqO3lJ2xNyXRH5GVHFfy0j8_1aX00Jy7OYHo"
+}

@@ -1,7 +1,13 @@
 const router = require('express').Router();
-const { add, remove } = require('../controllers/entry');
+const {
+	createEntry,
+	deleteEntry,
+	getAllEntries,
+	updateEntry,
+	getEntry,
+} = require('../controllers/entry');
 
-router.route('/add').get(add);
-router.route('/remove').get(remove);
+router.route('/').get(getAllEntries).post(createEntry);
+router.route('/:id').get(getEntry).delete(deleteEntry).patch(updateEntry);
 
 module.exports = router;

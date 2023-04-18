@@ -7,6 +7,9 @@ const USER = process.env.USER || 'Express';
 const express = require('express');
 const app = express();
 
+//ConnectDB
+const connectDB = require('./db/connect');
+
 //Routes
 const authRouter = require('./routes/auth');
 const entryRouter = require('./routes/entry');
@@ -17,14 +20,15 @@ const notFoundMW = require('./middleware/not-found');
 const errorMW = require('./middleware/error-handler');
 
 // app.use(express.static('../frontend/dist'));
+app.use(express.json());
 
 app.get('/', (req, res) => {
 	res.send(`Hi, ${USER}`);
 });
 
-app.get('/api/v1/auth', authRouter);
-// app.use('/api/v1/entry', authenticateMW, entryRouter);
-app.use('/api/v1/entry', entryRouter);
+app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/entry', authenticateMW, entryRouter);
+// app.use('/api/v1/entry', entryRouter);
 
 app.use(notFoundMW);
 app.use(errorMW);
@@ -36,8 +40,8 @@ app.use(errorMW);
 //Function Start
 async function start() {
 	try {
-		// await connectDB(process.env.MONGO_URL);
-		// console.log('Connected to the DataBase Sucessfully');
+		await connectDB(process.env.MONGO_URI);
+		console.log('Connected to the DataBase Sucessfully');
 		app.listen(PORT, () => {
 			console.log(`Server is listening on http://localhost:${PORT}`);
 		});
