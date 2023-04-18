@@ -1,0 +1,15 @@
+*{
+    margin:0px;
+    color: white;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: flex-start;
+}
+.funds{
+    display: flex;
+    flex-direction: column;
+}

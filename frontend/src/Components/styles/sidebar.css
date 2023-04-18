@@ -1,0 +1,8 @@
+.sidebar {
+    background-color: orange;
+    height: 100vh;
+    width: 150px;
+}
+.sidebar li{
+    height: 30px;
+}
