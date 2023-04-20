@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const SingleTransaction = new mongoose.Schema(
+const SingleTransactionSchema = new mongoose.Schema(
 	{
 		category: {
 			type: String,
@@ -21,8 +21,13 @@ const SingleTransaction = new mongoose.Schema(
 			default: '',
 			maxlength: 100,
 		},
+		createdBy:{
+			type:mongoose.Types.ObjectId,
+			ref:'User',
+			required:[true,'Please provide user']
+		}
 	},
 	{ timestamps: true }
 );
 
-module.exports = mongoose.model('Transaction', SingleTransaction);
+module.exports = mongoose.model('Transaction', SingleTransactionSchema);

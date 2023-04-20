@@ -25,8 +25,8 @@ const UserSchema = new mongoose.Schema({
 		required: [true, 'Please provide password'],
 		minLength: 6,
 	},
-	transactions: {
-		type: [SingleTransaction],
+	transactionsIDs: {
+		type: [mongoose.Types.ObjectId],
 		default: [],
 	},
 });
@@ -48,6 +48,13 @@ UserSchema.methods.createJWT = function () {
 UserSchema.methods.comparePassword = async function (candidatePassword) {
 	const isMatch = await bcrypt.compare(candidatePassword, this.password);
 	return isMatch;
+};
+
+UserSchema.methods.delEntry = async function (transid) {
+	for (let index = 0; index < transactionsIDs.length; index++) {
+		const element = transactionsIDs[index];
+		
+	}
 };
 
 module.exports = mongoose.model('User', UserSchema);
