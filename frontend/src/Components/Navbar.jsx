@@ -4,7 +4,6 @@ import vitesvg from '../assets/vite.svg';
 import { useState } from 'react';
 // import {FaBars} from 'react-icons/fa'
 
-
 const ListItem = ({ name, link }) => {
 	return (
 		<li>
@@ -14,21 +13,15 @@ const ListItem = ({ name, link }) => {
 };
 
 const Navbar = () => {
-
- 	return (
+	return (
 		<>
 			<nav>
+				<div className='nav-header'>
+					<h2>myFin</h2>
+					{/* <button className='nav-toggle'></button> */}
+				</div>
 				<div className='nav-center'>
 					{/* nav header */}
-					<div className='nav-header'>
-						<img
-							src={vitesvg}
-							className='logo'
-							alt='logo'
-						/>
-						<button className='nav-toggle'>
-						</button>
-					</div>
 					{/* links */}
 					<ul className='links'>
 						<ListItem
@@ -48,7 +41,6 @@ const Navbar = () => {
 							link='#'
 						/>
 					</ul>
-					
 				</div>
 			</nav>
 		</>

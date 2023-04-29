@@ -1,19 +1,18 @@
-.investements {
+.investments {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 	width: 100%;
-	border: 0 solid;
-	margin: 20px;
+	border: none;
 	padding: 25px;
-	background-color: #047474;
+	background-color: #006466;
 }
 .tabs {
 	display: flex;
 	justify-content: flex-start;
 	align-items: stretch;
 }
-button {
+.btnrandom {
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 0;
@@ -28,6 +27,7 @@ button {
 }
 .btnSelected {
 	background-color: #0994d3;
+	background-image: linear-gradient(to right, #0994d3, #22d3ee);
 }
 .summary-section {
 	display: flex;
@@ -86,9 +86,9 @@ button {
 	width: 60px;
 	height: 60px;
 }
-.increase{
+.increase {
 	color: rgb(0, 184, 0);
 }
-.decrease{
+.decrease {
 	color: red;
 }

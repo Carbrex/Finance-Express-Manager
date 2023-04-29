@@ -1,44 +1,40 @@
 .card {
-    margin: 30px;
-    padding: 30px;
-    width: 100%;
-    border-radius: 0.125rem;
-    background-color: #047474;
+	padding: 30px;
+	width: 100%;
+	border-radius: 0.125rem;
+	background-color: #006466;
 }
 
-.btn {
-    height: 2rem;
-    font-weight: 550;
-    padding: 0 1rem;
-    border: none;
-    margin: 0.5rem;
-    background-color: #7c3aed;
-    border-radius: 0.2rem;
+.btns {
+	height: 2rem;
+	font-weight: 550;
+	padding: 0 1rem;
+	border: none;
+	margin: 0.5rem;
+	background-color: #7c3aed;
+	border-radius: 0.2rem;
 }
 
 .btn-green {
-    background-image: linear-gradient(to right, #38cb6e, turquoise);
-}
-
-.btn-blue {
-    background-image: linear-gradient(to right, #1fbed6 , #22d3ee);
+	background-image: linear-gradient(to right, #38cb6e, turquoise);
 }
 
 .trnsc-table {
-    width: 100%;
+	width: 100%;
 }
 
 .trnsc-table tr {
-    padding: 0 2px;
-    text-align: left;
-    display: grid;
-    grid-template-columns: 3fr 1fr 3fr 1fr 2fr;
-    height: 3rem;
+	padding: 0 5px;
+	text-align: left;
+	display: grid;
+	grid-template-columns: 3fr 1fr 3fr 1fr 2fr;
+	align-items: center;
+	height: 3rem;
 }
 
-.trnsc-table thead>tr {
-    background-color: #22222296;
+.trnsc-table thead > tr {
+	background-color: #22222296;
 }
-.trnsc-table tbody>tr {
-    background-color: #22222262;
+.trnsc-table tbody > tr {
+	background-color: #22222262;
 }

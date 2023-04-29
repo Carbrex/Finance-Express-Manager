@@ -5,7 +5,7 @@ import reactsvg from '../assets/react.svg';
 const Investments = () => {
 	const [selection, setSelection] = React.useState('Summary');
 	return (
-		<div className='investements'>
+		<div className='investments'>
 			<h4>Investments(Beta)</h4>
 			<div className='tabs'>
 				<Tab
@@ -132,7 +132,7 @@ function Performer({ name, type, percentage, increase, imgsrc }) {
 				<span className='percentage'>{percentage}% of portfolio</span>
 			</div>
 			<span className={increase >= 0 ? 'increase profit' : 'decrease profit'}>
-				{increase >= 0 ? `+${increase}$` : `-${increase}$`}
+				{increase >= 0 ? `+${increase}$` : `${increase}$`}
 			</span>
 		</div>
 	);
@@ -140,7 +140,7 @@ function Performer({ name, type, percentage, increase, imgsrc }) {
 function Tab({ name, selectme, selection }) {
 	return (
 		<button
-			className={selection === name ? 'btnSelected' : null}
+			className={selection === name ? 'btnSelected btnrandom' : 'btnrandom'}
 			onClick={() => {
 				selectme(name);
 			}}
