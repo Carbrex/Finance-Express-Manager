@@ -5,6 +5,7 @@ import SideBar from './Components/SideBar';
 import Footer from './Components/Footer';
 import Dashboard from './Components/Dashboard';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Transactions from './Components/Transactions';
 export default function App() {
 	return (
 		<>
@@ -14,12 +15,14 @@ export default function App() {
 				</header>
 				<div className='App'>
 					<SideBar />
-					<Routes>
-						<Route path = "/" element = {<Dashboard />} />
-						{/* <Route path = "/transactions" element = {<Transactions/>} /> */}
-					</Routes>
-					
-					
+					<section >
+						<Routes>
+							<Route path="/" element={<Dashboard />} />
+							<Route path="/transactions" element={<Transactions />} />
+						</Routes>
+					</section>
+
+
 				</div>
 			</BrowserRouter>
 			{/* <footer>

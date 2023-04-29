@@ -1,6 +1,6 @@
 .sidebar {
     background-color: #047474;
-    height: 100vh;
+    height: calc( 100vh - 72px );
     width: 150px;
 }
 .sidebar li{
