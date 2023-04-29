@@ -22,7 +22,7 @@ const SingleTransactionSchema = new mongoose.Schema(
 			maxlength: 100,
 		},
 		createdBy:{
-			type:mongoose.Types.ObjectId,
+			type: mongoose.Types.ObjectId,
 			ref:'User',
 			required:[true,'Please provide user']
 		}
