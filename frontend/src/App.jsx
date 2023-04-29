@@ -5,6 +5,7 @@ import SideBar from './Components/SideBar';
 import Footer from './Components/Footer';
 import Dashboard from './Components/Dashboard';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Investments from './Components/Investments';
 export default function App() {
 	return (
 		<>
@@ -15,7 +16,8 @@ export default function App() {
 				<div className='App'>
 					<SideBar />
 					<Routes>
-						<Route path = "/" element = {<Dashboard />} />
+						{/* <Route path = "/" element = {<Dashboard />} /> */}
+						<Route path = "/" element = {<Investments />} />
 						{/* <Route path = "/transactions" element = {<Transactions/>} /> */}
 					</Routes>
 					

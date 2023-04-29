@@ -1,0 +1,94 @@
+.investements {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	border: 0 solid;
+	margin: 20px;
+	padding: 25px;
+	background-color: #047474;
+}
+.tabs {
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+button {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0;
+	background-color: #0b525b;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1rem;
+}
+.btnSelected {
+	background-color: #0994d3;
+}
+.summary-section {
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	text-align: center;
+	width: 100%;
+	height: 4rem;
+	gap: 20px;
+}
+.tab {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0;
+	padding: 10px;
+	background-color: #0b525b;
+	border: 1px solid black;
+	border-radius: 2px;
+}
+
+.summary {
+	display: flex;
+	gap: 20px;
+}
+.chart {
+	width: 40%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.top-performer {
+	display: flex;
+	gap: 1px;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+.performer {
+	display: flex;
+	background-color: #0b525b;
+	padding: 5px 10px 5px 10px;
+	gap: 15px;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 100%;
+}
+.details {
+	display: flex;
+	flex-direction: column;
+}
+.profit {
+	margin-left: auto;
+	padding: 10px;
+}
+.imgsvg {
+	width: 60px;
+	height: 60px;
+}
+.increase{
+	color: rgb(0, 184, 0);
+}
+.decrease{
+	color: red;
+}
