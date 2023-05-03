@@ -5,7 +5,7 @@ import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 
-const Transactions = () => {
+const Transactions = ({ onDashboard }) => {
 	const [] = useState('');
 	const [data, setData] = useState([]);
 	const updateTrnsc = (id) => {};
@@ -27,24 +27,34 @@ const Transactions = () => {
 				},
 			],
 		};
-		setData(arr.entries);
+		if (onDashboard) setData(arr.entries.splice(0, 5));
+		else setData(arr.entries);
 	}, []);
 
 	return (
 		<div className='card'>
-			<h4>Transactions</h4>
-			<button className='btns btn-green'>
-				<div
-					style={{
-						display: 'flex',
-						alignItems: 'center',
-						justifyContent: 'space-between',
-					}}
-				>
-					<AddCircleOutlineIcon />
-					<p>ADD TRANSACTION</p>
-				</div>
-			</button>
+			{onDashboard ? (
+				<>
+					<h4>Recent Transactions</h4>
+					<br/>
+				</>
+			) : (
+				<>
+					<h4>Transactions</h4>
+					<button className='btns btn-green'>
+						<div
+							style={{
+								display: 'flex',
+								alignItems: 'center',
+								justifyContent: 'space-between',
+							}}
+						>
+							<AddCircleOutlineIcon />
+							<p>ADD TRANSACTION</p>
+						</div>
+					</button>
+				</>
+			)}
 			<table className='trnsc-table'>
 				<thead>
 					<tr>
@@ -72,8 +82,12 @@ const Transactions = () => {
 								<td>{remarks}</td>
 								<td>{amount}</td>
 								<td>
-									<button><EditIcon onClick={deleteTrnsc}/></button>
-									<button><DeleteIcon onClick={deleteTrnsc}/></button>
+									<button>
+										<EditIcon onClick={deleteTrnsc} />
+									</button>
+									<button>
+										<DeleteIcon onClick={deleteTrnsc} />
+									</button>
 								</td>
 							</tr>
 						);

@@ -10,6 +10,7 @@ import SideBar from './Components/SideBar';
 import Dashboard from './Components/Dashboard';
 import Transactions from './Components/Transactions';
 import Investments from './Components/Investments';
+import StatusBar from './Components/StatusBar';
 import Footer from './Components/Footer';
 
 export default function App() {
@@ -21,7 +22,8 @@ export default function App() {
 				</header>
 				<div className='App'>
 					<SideBar />
-					<section>
+					<section className="app-section">
+						<StatusBar />
 						<Routes>
 							<Route
 								path='/'
@@ -29,7 +31,7 @@ export default function App() {
 							/>
 							<Route
 								path='/transactions'
-								element={<Transactions />}
+								element={<Transactions onDashboard={false}/>}
 							/>
 							<Route
 								path='/accounts'

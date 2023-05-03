@@ -2,9 +2,8 @@
 	padding: 30px;
 	width: 100%;
 	border-radius: 0.125rem;
-	background-color: #006466;
+	background-color: var(--light);
 }
-
 .btns {
 	height: 2rem;
 	font-weight: 550;
@@ -27,14 +26,14 @@
 	padding: 0 5px;
 	text-align: left;
 	display: grid;
-	grid-template-columns: 3fr 1fr 3fr 1fr 2fr;
+	grid-template-columns: 2fr 1fr 2fr 1fr 1fr;
 	align-items: center;
 	height: 3rem;
 }
 
 .trnsc-table thead > tr {
-	background-color: #22222296;
+	background-color: var(--table-dark);
 }
 .trnsc-table tbody > tr {
-	background-color: #22222262;
+	background-color: var(--table-light);
 }

@@ -1,5 +1,5 @@
 .Sidebar {
-	background-color: #006466;
+	background-color: var(--light);
 	width: 250px;
 	flex-shrink: 0;
 }
@@ -24,7 +24,7 @@
 
 .row:hover {
 	cursor: pointer;
-	background-color: #0b525b;
+	background-color: var(--dark);
 }
 
 .row #icon {

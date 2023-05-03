@@ -12,7 +12,7 @@ Navbar
 nav {
 	display: flex;
 	/* align-items: center; */
-	background-color: #006466;
+	background-color: var(--light);
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 	height: 60px;
 }

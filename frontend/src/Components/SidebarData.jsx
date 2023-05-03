@@ -7,6 +7,7 @@ import CorporateFareIcon from '@mui/icons-material/CorporateFare';
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
 import BookIcon from '@mui/icons-material/Book';
 import EqualizerIcon from '@mui/icons-material/Equalizer';
+import SettingsIcon from '@mui/icons-material/Settings';
 
 export const SidebarData = [
 	{
@@ -20,28 +21,8 @@ export const SidebarData = [
 		link: '/transactions',
 	},
 	{
-		title: 'Accounts',
-		icon: <AccountBalanceIcon />,
-		link: '/',
-	},
-	{
 		title: 'Categories',
 		icon: <CategoryIcon />,
-		link: '/',
-	},
-	{
-		title: 'Entities',
-		icon: <CorporateFareIcon />,
-		link: '/',
-	},
-	{
-		title: 'Rules',
-		icon: <EmojiObjectsIcon />,
-		link: '/',
-	},
-	{
-		title: 'Budgets',
-		icon: <BookIcon />,
 		link: '/',
 	},
 	{
@@ -52,6 +33,11 @@ export const SidebarData = [
 	{
 		title: 'Stats',
 		icon: <CategoryIcon />,
+		link: '/',
+	},
+	{
+		title: 'Settings',
+		icon: <SettingsIcon />,
 		link: '/',
 	},
 ];

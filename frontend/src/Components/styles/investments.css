@@ -5,7 +5,7 @@
 	width: 100%;
 	border: none;
 	padding: 25px;
-	background-color: #006466;
+	background-color: var(--light);
 }
 .tabs {
 	display: flex;
@@ -16,7 +16,7 @@
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 0;
-	background-color: #0b525b;
+	background-color: var(--dark);
 	border: none;
 	color: white;
 	padding: 10px 25px;
@@ -26,8 +26,12 @@
 	font-size: 1rem;
 }
 .btnSelected {
-	background-color: #0994d3;
-	background-image: linear-gradient(to right, #0994d3, #22d3ee);
+	background-color: var(--selection);
+	background-image: linear-gradient(
+		to right,
+		var(--selection),
+		var(--selectionto)
+	);
 }
 .summary-section {
 	display: flex;
@@ -43,9 +47,9 @@
 	flex-shrink: 1;
 	flex-basis: 0;
 	padding: 10px;
-	background-color: #0b525b;
+	background-color: var(--dark);
 	border: 1px solid black;
-	border-radius: 2px;
+	border-radius: 0.25rem;
 }
 
 .summary {
@@ -67,7 +71,7 @@
 }
 .performer {
 	display: flex;
-	background-color: #0b525b;
+	background-color: var(--dark);
 	padding: 5px 10px 5px 10px;
 	gap: 15px;
 	border: 1px solid black;

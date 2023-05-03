@@ -10,6 +10,24 @@ button {
 	border: none;
 }
 
+:root {
+	--light: #006466;
+	--lightto: #006466;
+	--dark: #0b525b;
+	--table-light: #22222262;
+	--table-dark: #22222296;
+	--selection: #0994d3;
+	--selectionto: #22d3ee;
+	--card: #123b3b;
+
+	--newtr: #38cb6e;
+	--newtrto: turquoise;
+	--seetr: var(--selection);
+	--seetrto: var(--selectionto);
+	--seestat: rgba(255, 0, 0, 0.836);
+	--seestatto: rgb(144, 43, 60);
+}
+
 .App {
 	background: #045454;
 	color: aliceblue;
@@ -25,8 +43,10 @@ body {
 	font-size: 0.875rem;
 }
 
-section {
+.app-section {
 	width: 100%;
 	display: flex;
+	flex-direction: column;
+	gap: 12px;
 	padding: 20px;
 }
