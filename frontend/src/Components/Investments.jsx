@@ -143,8 +143,7 @@ function Tab({ name, selectme, selection }) {
 			className={selection === name ? 'btnSelected btnrandom' : 'btnrandom'}
 			onClick={() => {
 				selectme(name);
-			}}
-		>
+			}}>
 			{name}
 		</button>
 	);
